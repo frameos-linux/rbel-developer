@@ -3,8 +3,8 @@
 * git
 * ruby
 * rubygems
-
-SSH RW access to the FrameOS Github repositories.
+* bundler (gem)
+* SSH read/write access to the FrameOS Github repositories.
 
 # Getting started
 
