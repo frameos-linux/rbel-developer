@@ -16,6 +16,7 @@ if [ -z $PKGWIZ_PROFILE ]; then
   exit 1
 fi
 
+pushd sources 
 for pkg in `find -maxdepth 1 -type d`; do 
   [ pkg == '.' ] && continue
   pushd $pkg
@@ -25,3 +26,4 @@ for pkg in `find -maxdepth 1 -type d`; do
   pkgwiz remote-build -b $PKGWIZ_BUILDBOT -m $PKGWIZ_PROFILE
   popd
 done
+popd sources 
