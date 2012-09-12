@@ -26,25 +26,25 @@ To update the sources (i.e. git pull on every repo), use:
 
 # Script list
 
-*build_all.sh*
+**build_all.sh**
 
 Build the SRPM and send it to a remote buildbot (pkgwiz remote-build)
 
 Needs a couple of environments variables. See script source.
 
-*clone_repos.rb*
+**clone_repos.rb**
 
 Clone all the Chef package repos and deps
 
-*git_pull_all.sh*
+**git_pull_all.sh**
 
 run 'git pull' in every repo to update sources.
 
-*print_dirty_repos.rb*
+**print_dirty_repos.rb**
 
 Print modified (dirty) repositories.
 
-*print_gem_deps.rb*
+**print_gem_deps.rb**
 
 Print all the gems required as deps by the packages.
 
